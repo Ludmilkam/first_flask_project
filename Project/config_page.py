@@ -1,6 +1,6 @@
 import flask, flask_login
 
-# декоратор
+# декоратор для базового рендера сторінки 
 def config_page(template_name: str):
     def render_template(function: object):
         def processor(*args, **kwargs):
